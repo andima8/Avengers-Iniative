@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@color/colorsoftblack"
+    >
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/logoavengers"
+       />
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame_top"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#40FFFFFF"
+                >
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/photo"
+                    android:scaleType="centerInside"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Superhero Name"
+                    android:layout_toRightOf="@+id/photo"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/dummy1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorblack"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SuperHero Name"
+                    android:layout_toRightOf="@+id/photo"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/colorblack"
+                    android:id="@+id/super_name"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/dummy1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Real Name"
+                    android:layout_toRightOf="@+id/photo"
+                    android:id="@+id/dummy2"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/super_name"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorblack"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/real_name"
+                    android:text="Real Name"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@+id/photo"
+                    android:layout_below="@+id/dummy2"
+                    android:textColor="@color/colorblack"
+                    android:textSize="18sp"
+                    />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bio"
+            android:text="Bio"
+            android:textSize="18sp"
+            android:background="#70FFFFFF"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

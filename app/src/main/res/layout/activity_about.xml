@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@color/colorsoftblack"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logoavengers"
+        android:scaleType="fitCenter"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:background="#70FFFFFF"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dev_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:src="@drawable/andi"
+            tools:src="@drawable/andi" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dev_name"
+            android:text="Andima8"
+            android:textSize="20sp"
+            android:textColor="@color/colorblack"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dev_email"
+            android:text="andima8@yahoo.co.id"
+            android:textSize="18sp"
+            android:textColor="@color/colorblack"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
